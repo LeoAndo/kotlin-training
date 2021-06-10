@@ -1,11 +1,38 @@
-
 import kotlin.random.Random
-import kotlin.random.nextUBytes
 import kotlin.random.nextUInt
 
 fun main(args: Array<String>) {
     testUByte()
     testUInt()
+    testUByteToString()
+}
+
+// 基数の定義(2 ~ 36まで)
+private const val BINARY_NUMBER = 2 // 2進数
+private const val HEX = 16 // 16進数
+private const val NG_PATTERN_BASE_NUMBER = 37
+
+fun testUByteToString() {
+    println("=============testUByteToString-START=============")
+    val data: UByte = 10u
+    val data2: Byte = 10
+    println("UByte HEX: ${data.toString(HEX)}")
+    println("UByte BINARY: ${data.toString(BINARY_NUMBER)}")
+    println("Byte HEX: ${data2.toString(HEX)}")
+    println("Byte BINARY: ${data2.toString(BINARY_NUMBER)}")
+
+    val ngPattern: Byte = 10
+    runCatching {
+        println("Byte HEX: ${ngPattern.toString(NG_PATTERN_BASE_NUMBER)}")
+    }.onFailure {
+        when (it) {
+            is IllegalArgumentException -> {
+                println(it.localizedMessage)
+            }
+        }
+    }
+
+    println("=============testUByteToString-END=============")
 }
 
 fun testUInt() {
@@ -23,8 +50,19 @@ fun testUInt() {
     println(unsignedData)
     println(unsignedData2)
 
-    val nextUInt:UInt = Random.nextUInt(from = 2u, until = 5u) // 2 - 4までのランダム値生成
+    val nextUInt: UInt = Random.nextUInt(from = 2u, until = 5u) // 2 - 4までのランダム値生成
     println(nextUInt)
+
+    runCatching {
+        val nextUIntNGPattern: UInt = Random.nextUInt(from = 2u, until = 2u)
+        println(nextUIntNGPattern)
+    }.onFailure {
+        when (it) {
+            is IllegalArgumentException -> {
+                println(it.localizedMessage)
+            }
+        }
+    }
     println("=============UInt-END=============")
 }
 
@@ -43,10 +81,5 @@ fun testUByte() {
     val unsignedData2: UByte = 255.toUByte()
     println(unsignedData)
     println(unsignedData2)
-
-    @OptIn(ExperimentalUnsignedTypes::class)
-    val nextUBytes:UByteArray = Random.nextUBytes(3)
-    println(nextUBytes)
-
     println("=============UByte-END=============")
 }
