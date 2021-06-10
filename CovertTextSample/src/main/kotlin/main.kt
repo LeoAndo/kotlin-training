@@ -3,6 +3,19 @@ import java.util.*
 fun main(args: Array<String>) {
     uppercaseTest()
     convertCharToUnicode()
+    checkCharValue()
+}
+
+fun checkCharValue() {
+    println("============checkCharValue-START===========")
+    println("'7'.isDigit(): "+ '7'.isDigit())
+    println("'A'.isLetter(): " + 'A'.isLetter())
+    println("'!'.isLetterOrDigit(): " + '!'.isLetterOrDigit())
+    println("'B'.isLowerCase(): " + 'B'.isLowerCase())
+    println("'C'.isUpperCase(): " + 'C'.isUpperCase())
+    println("'f'.isTitleCase(): " + 'f'.isTitleCase())
+    println("'.'.isISOControl(): " + '.'.isISOControl())
+    println("============checkCharValue-END===========")
 }
 
 private const val UNICODE_NUM_ZERO = 51 // '1'のunicode 10進表記
