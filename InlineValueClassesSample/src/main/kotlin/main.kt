@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
-    payMoney(500) // これだと通貨がわからない.
+    payMoney(500)
     payMoney(Cents(200))
     payMoney(Cents2(100))
 }
