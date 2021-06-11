@@ -1,0 +1,1 @@
+data class Cents2(val amount: Int)
