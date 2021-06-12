@@ -56,10 +56,12 @@ fun uppercaseTest() {
     val titlecase = 'ŉ'.titlecase()
     val titlecaseChar = 'ŉ'.titlecaseChar()
     val localeLanguage = "kotlin".uppercase(Locale.forLanguageTag("tr-TR"))
+    val replaceFirstChar = "KOTLIN".replaceFirstChar { it.lowercase() }
     println(upper)
     println(lower)
     println(titlecase)
     println(titlecaseChar)
     println(localeLanguage)
+    println(replaceFirstChar)
     println("=========uppercaseTest-END=========")
 }
