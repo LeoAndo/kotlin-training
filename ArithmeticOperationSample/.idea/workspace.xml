@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19200ba1-975d-4b09-abe3-23a9e88ce8a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Concepts/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Concepts/src/main/kotlin/main.kt" beforeDir="false" />
-    </list>
+    <list default="true" id="19200ba1-975d-4b09-abe3-23a9e88ce8a1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +14,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -40,6 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Kotlin.DivSample02Kt">
@@ -73,5 +68,16 @@
       <updated>1623336989629</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
