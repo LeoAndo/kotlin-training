@@ -7,7 +7,8 @@ fun main(args: Array<String>) {
     val response = safeApiCall(onAction = { scan.nextInt() })
     when (response) {
         is Success -> print("success: ${response.data}")
-        is InputMismatchError -> print("input mismatch error!")
+        InputMismatchError -> print("input mismatch error!")
         is Failure -> print(response.exception.localizedMessage)
     }
+    scan.close()
 }
