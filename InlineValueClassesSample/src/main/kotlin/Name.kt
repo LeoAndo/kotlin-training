@@ -1,5 +1,5 @@
 @JvmInline
-internal value class Name(private val s: String): Printable {
+value class Name(private val s: String): Printable {
     init {
         // 条件式がfalseならIllegalArgumentExceptionがスローされる.
         require(s.isNotEmpty()) {
