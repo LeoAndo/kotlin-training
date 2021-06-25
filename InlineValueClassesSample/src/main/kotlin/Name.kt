@@ -1,5 +1,5 @@
 @JvmInline
-internal value class Name(private val s: String) {
+internal value class Name(private val s: String): Printable {
     init {
         // 条件式がfalseならIllegalArgumentExceptionがスローされる.
         require(s.isNotEmpty()) {
@@ -17,4 +17,6 @@ internal value class Name(private val s: String) {
     fun greetLowercase() {
         println("Hello $lowercase")
     }
+
+    override fun prettyPrint(): String = "Let's $s"
 }
