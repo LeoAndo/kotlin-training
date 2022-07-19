@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     println(ret2)
 
     val ret3 = if (str.isEmpty()) "default value" else str
-    println(ret)
+    println(ret3)
     val ret4 = str.ifEmpty { "default value" }
-    println(ret2)
+    println(ret4)
 }
