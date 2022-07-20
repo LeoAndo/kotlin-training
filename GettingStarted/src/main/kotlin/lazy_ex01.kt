@@ -9,6 +9,7 @@ class Foo {
 
     val bar: Double by lazy {
         println("computed!")
-        counter++
+        counter + 1
     }
 }
+
